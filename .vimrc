@@ -1,6 +1,8 @@
+"***********************
 ""
 "" Try and get some of that VIM magic with a few extra settings
 ""
+"***********************
 
 "" Turn on Syntax Highlighting
 syntax on
