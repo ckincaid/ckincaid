@@ -1,0 +1,9 @@
+Repository for all of the "." files in the home directory
+
+Symbolic link from home directory to these "." files in order to propogate the updates
+
+.bashrc
+.gitconfig
+.gitignore
+.vimrc
+
