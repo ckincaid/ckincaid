@@ -1,0 +1,12 @@
+##
+## Baseline files to ignore for git
+##
+
+a.out
+*.o
+*~
+
+##
+## Specific project files to ignore
+##
+
