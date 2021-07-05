@@ -50,9 +50,13 @@ function! StatuslineGit()
 	return strlen(l:branchname) > 0?' '.l:branchname.' ':''
 endfunction
 
+""***********************************************************
 ""
-"" set the status bar to show filename all the time
+"" set the status bar to show filename all the time,
+"" git info, line, column, mode, etc
 ""
+""***********************************************************
+
 set laststatus=2
 set statusline+=\[b\:%n\]
 set statusline+=\[%{StatuslineGit()}\]
@@ -69,7 +73,7 @@ set statusline+=%=
 ""
 set statusline+=%y
 set statusline+=\ \ %l:%c\ \ \ \ 
-set statusline+=\ %p%%
+set statusline+=\ %p%%\ \ 
 
 ""***********************************************************
 ""
@@ -79,6 +83,9 @@ set statusline+=\ %p%%
 let g:termdebug_wide=163
 let g:termdebug_popup=0
 
+""***********************************************************
 ""
 "" And... out
 ""
+""***********************************************************
+
