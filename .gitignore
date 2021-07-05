@@ -9,7 +9,7 @@
 ## Specific project files to ignore
 ##
 play.log
-boarddump.chess
+*.chess
 
 #*****************************
 #
