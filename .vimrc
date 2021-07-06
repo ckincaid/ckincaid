@@ -16,6 +16,10 @@ syntax on
 set number
 set showmatch
 set autoindent
+set expandtab
+set tabstop=4
+set smarttab
+filetype indent on
 
 "" Turn on show mode to know current VIM mode
 set showmode
@@ -26,14 +30,18 @@ set noswapfile
 "" Highlight all search results
 set hlsearch
 
-"" Ignore case in search
+"" Ignore case in search, except when capital in search string
 set ignorecase
+set smartcase
 
 "" Show dynamic incremental search results
 set incsearch
 
 "" Set the spelling mode
 "set spell spelllang=en_us
+
+"" mouse enabled
+set mouse=a
 
 ""***********************************************************
 ""
