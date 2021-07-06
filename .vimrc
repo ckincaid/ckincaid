@@ -7,28 +7,14 @@
 "" Turn on Syntax Highlighting
 syntax on
 
-"*************************************************************
-""
-"" Stuff for programming
-"" Show line numbers, show matching brackets, autoindent
-""
-"*************************************************************
+"" show line numbers
 set number
-set showmatch
-set autoindent
-set expandtab
-set tabstop=4
-set smarttab
-filetype indent on
+
+"" don't do line wrap in the middle of a word
+set linebreak
 
 "" Turn on show mode to know current VIM mode
 set showmode
-
-"" Disable Swapfile
-set noswapfile
-
-"" Highlight all search results
-set hlsearch
 
 "" Ignore case in search, except when capital in search string
 set ignorecase
@@ -40,8 +26,38 @@ set incsearch
 "" Set the spelling mode
 "set spell spelllang=en_us
 
+"" Highlight all search results
+set hlsearch
+
 "" mouse enabled
 set mouse=a
+
+"*************************************************************
+""
+"" Stuff for programming
+"" Show line numbers, show matching brackets, autoindent
+""
+"*************************************************************
+"" show matching brackets
+set showmatch
+
+"" language specific autoindentation
+set autoindent
+
+"" expand tabs to be spaces, and set tab to 4 (default is 8)
+set expandtab
+set tabstop=4
+set smarttab
+set shiftwidth=4
+
+"" programming language specific indentation
+set smarttab
+
+"" file type specific indenting
+filetype indent on
+
+"" Disable Swapfile
+set noswapfile
 
 ""***********************************************************
 ""
